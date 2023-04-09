@@ -606,19 +606,19 @@ header .sticky {
 .row-blog {
     display: grid;
     grid-template-columns: repeat(2,2fr);
-    margin: 0 200px;
+    margin: 40px 200px;
     overflow: hidden;
  }
 .row-container {
     margin: 0 20px 20px 20px;
+    border-bottom: 3px solid #fff;
 }
-.container-img {
-    width: 100%;
-    height: auto;
+.row-container__content {
     position: relative;
-    overflow: hidden;
-    transition: all 1s ease;
+    width: 100%;
+    height: 100%;
 }
+
 .row-container:hover {
     border-bottom: 3px solid var(--primary-color);
 }
@@ -639,6 +639,7 @@ header .sticky {
 .container-img .container-img__img {
     transition: all 1s ease;
     width: 100%;
+    
 }
 .row-container__content .container-img:hover .container-img__img {
     transform: scale(1.1);
@@ -662,9 +663,6 @@ header .sticky {
     transition: all 1s ease;
     opacity: 0;
  }
-.row-container__content .container-img {
-    overflow: hidden;
-}
 .row-container__content .container-img:hover .overlay__img i {
     animation: animationImg 1s ease;
     opacity: 1;
